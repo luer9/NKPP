@@ -6,7 +6,7 @@
 
 | id | query                                                        | type |
 | ----- | ------------------------------------------------------------ | ---- |
-| Q1  | `<http://semantics.crl.ibm.com/univ-bench-dl.owl#subOrganizationOf>`*                                         | $S − KPPQ$ |
+| Q1  | `<http://semantics.crl.ibm.com/univ-bench-dl.owl#subOrganizationOf>*`                                         | $S − KPPQ$ |
 | Q2  | $<http://semantics.crl.ibm.com/univ-bench-dl.owl#hasSameHomeTownWith>^{\*}$                               | $S − KPPQ$ |
 | Q3  | $<http://semantics.crl.ibm.com/univ-bench-dl.owl#isFriendOf>^{\*}/name$                            | $S − KPPQ$ |
 | Q4  | $(<http://semantics.crl.ibm.com/univ-bench-dl.owl#like>/<http://semantics.crl.ibm.com/univ-bench-dl.owl#telephone>)^{\*}$                      | $E − KPPQ$ |
