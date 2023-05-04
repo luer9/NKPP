@@ -28,15 +28,17 @@
 
 ## DBpedia - Query Set
 
-| index | query                                                        | type |
+| id | query                                                        | type |
 | ----- | ------------------------------------------------------------ | ---- |
-| L_Q1  | $subOrganizationOf^{\*}$                                          | $KS_{one}$ |
-| L_Q2  | $worksFor/subOrganizationOf^{\*}$                               | $KS_{one}$ |
-| L_Q3  | $headOf/subOrganizationOf^{\*}/name$                            | $KS_{one}$ |
-| L_Q4  | $(headOf/subOrganizationOf/memberOf)^{\*}$                      | $KS_{fm}$ |
-| L_Q5  | $ResearchGroup/subOrganizationOf^{\*}/University$               | $KS_{one}$ |
-| L_Q6  | $FullProfessor/headOf/subOrganizationOf^{\*}/typeUniversity$    | $KS_{one}$ |
-| L_Q7  | $ResearchGroup/subOrganizationOf^{\*}/University/ResGroup^{\*}$     | $KS_{one}$ |
-| L_Q8  | $(worksFor/subOrganizationOf^{\*})^{\*}$                           | $KS_{co}$ |
-| L_Q9  | $((headOf/subOrganizationOf)^{\*}/memberOf)^{\*}$                  | $KS_{co}$ |
-| L_Q10 | $(FullProfessor/headOf)^{\*}/(subOrganizationOf^{\*}/typeUniversity)^{\*}$ | $KS_{co}$ |
+| Q1  | `<http://dbpedia.org/property/date>*`                                         | $S − KPPQ$ |
+| Q2  | `<http://dbpedia.org/property/supporters>*`                              | $S − KPPQ$ |
+| Q3  | `<http://dbpedia.org/property/allies>*`                            | $S − KPPQ$ |
+| Q4  | `<http://dbpedia.org/property/power/massMain>*`                      | $S − KPPQ$ |
+| Q5  | `<http://dbpedia.org/property/dialects>*`               | $S − KPPQ$ |
+| Q6  | `<http://dbpedia.org/property/origin>*`    | $S − KPPQ$ |
+| Q7  | `<http://dbpedia.org/property/team(s)_>*`     | $S − KPPQ$ |
+| Q8  | `(<http://dbpedia.org/property/birthPlace>/<http://dbpedia.org/property/knownFor>)*`       | $E − KPPQ$ |
+| Q9  | `(<http://dbpedia.org/property/knownFor>/<http://dbpedia.org/property/birthPlace>/<http://dbpedia.org/ontology/isPartOf>)*`                  | $E − KPPQ$ |
+| Q10  | `<http://dbpedia.org/property/knownFor>*/<http://dbpedia.org/property/birthPlace>`                  | $C − KPPQ$ |
+| Q11  | `<http://dbpedia.org/property/knownFor>/<http://dbpedia.org/property/birthPlace>/<http://dbpedia.org/ontology/location>*`                  | $C − KPPQ$ |
+| Q12  | `<http://dbpedia.org/property/knownFor>*/<http://dbpedia.org/property/birthPlace>*`                  | $C − KPPQ$ |
