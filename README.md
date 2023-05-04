@@ -10,7 +10,7 @@
 | 216  | `<http://www.ppbenchmark.com/e+1>*`               | $PATH$ |
 | 215  | `<http://www.ppbenchmark.com/notExisting>*`    | $NOTEXIST$ |
 | 214  | `<http://www.ppbenchmark.com/eSelf>*`     | $CIRCLE$ |
-| 213  | `<http://www.ppbenchmark.com/e6>*`       | $Path length is 1$ |
+| 213  | `<http://www.ppbenchmark.com/e6>*`       | $PATH\;LENGTH\;IS\;1$ |
 
 ## UOBM - Query Set
 
