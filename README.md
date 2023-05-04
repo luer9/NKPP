@@ -2,6 +2,16 @@
 > Kleene Closure Property Path Query Optimization Based on Node Clustered Index
 ## BeSEPPI - Test Query Set
 
+| id | query                                                        | remark |
+| ----- | ------------------------------------------------------------ | ---- |
+| 219  | `<http://www.ppbenchmark.com/e+2>*`                                         | $CIRCLE$ |
+| 218  | `<http://www.ppbenchmark.com/e+>*`                              | $CIRCLE$ |
+| 217  | `<http://www.ppbenchmark.com/e+3>*`                      | $PATH$ |
+| 216  | `<http://www.ppbenchmark.com/e+1>*`               | $PATH$ |
+| 215  | `<http://www.ppbenchmark.com/notExisting>*`    | $NOTEXIST$ |
+| 214  | `<http://www.ppbenchmark.com/eSelf>*`     | $CIRCLE$ |
+| 213  | `<http://www.ppbenchmark.com/e6>*`       | $Path length is 1$ |
+
 ## UOBM - Query Set
 
 | id | query                                                        | type |
